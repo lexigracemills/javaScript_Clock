@@ -1,0 +1,10 @@
+body {
+    background-color: black;
+}
+
+#clockDisplay {
+    color: white;
+    text-align: center;
+    font-size: 40pt;
+    margin-top: 10%;
+}
