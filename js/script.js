@@ -39,9 +39,31 @@ function showTime() {
 
     console.log(time);
 
+    var month = date.getMonth();
+    var day = date.getDay();
+    var year = date.getFullYear();
+
+    console.log(month);
+    console.log(day);
+    console.log(year);
+
+    month = (month<10) ? ("0" + month) : month;
+    day = (day<10) ? ("0" + day) : day;
+    
+
+    var date = ("Today's date is " + month + "/" + day + "/" + year);
+
+
     document.getElementById('clockDisplay').innerText = time;
 
+    document.getElementById('dateDisplay').innerText = date;
+
     setTimeout(showTime, 1000);
+
+    // 1. Add a different font (of your choice) for your clock to use.
+    // 2. Display the current date below the time. For example: Today's date is: Tuesday, September 17th. *Hint - hours, minutes, and seconds aren't the only thing we can pull from a date object*
+    // 3. Add a header to your clock displaying your name, GitHub link, and LinkedIn profile link.
+
 }
 
 showTime();

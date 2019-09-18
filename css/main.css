@@ -1,10 +1,36 @@
 body {
-    background-color: black;
+    background-color: lightblue;
 }
 
 #clockDisplay {
-    color: white;
-    text-align: center;
+    color: darkgoldenrod;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
     font-size: 40pt;
-    margin-top: 10%;
+    font-family: fantasy;
+}
+
+#dateDisplay {
+    color: darkslategray;
+    margin-top: 30%;
+    text-align: center;
+    font-family: fantasy;
+    font-size: 40px;
+
+}
+
+h1 {
+    color: darkslategrey;
+    
+}
+
+#info {
+    text-align: center;
+    font-family: fantasy;
+}
+
+a {
+   padding: 8px;
 }
